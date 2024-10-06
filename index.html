@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule Manager</title>
+    </head>
+<body>
+
+<div class="schedule-form">
+    <h2>Train Schedule Manager</h2>
+    <input type="text" id="trainNumber" placeholder="Train Number" required>
+    <input type="time" id="arrivalTime" required>
+    <input type="time" id="departureTime" required>
+    <button onclick="addTrain()">Add Train</button>
+    <h3>Current Train Schedule:</h3>
+    
+    <table id="train-schedule">
+        <thead>
+            <tr>
+                <th>Train Number</th>
+                <th>Arrival Time</th>
+                <th>Departure Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
